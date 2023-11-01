@@ -1,0 +1,19 @@
+<div class="app-navbar">
+    <nav class="navbar">
+        <h2>Angular App</h2>
+
+        <span>
+            <a routerLink="/">Products</a>
+        </span>
+        <span>
+            <a routerLink="/about">About</a>
+        </span>
+        <span>
+            <span
+                    (click)="modalService.open()"
+            >
+                Create product
+            </span>
+        </span>
+    </nav>
+</div>

@@ -1,0 +1,16 @@
+<div class="product">
+  <img class="product_image" [src]="product.image" [alt]="product.title">
+  <h2>{{ product.title }}</h2>
+  <h3>Price: {{ product.price | currency: "EUR" }}</h3>
+  <button
+    [ngClass]="{'button-hide' : details}"
+    (click)="details=!details"
+  >
+    {{details ? 'Hide' : 'Details' }}
+  </button>
+  <div *ngIf="details" class="product_details">
+    <p>{{ product.description }}</p>
+    <p>Rating: {{ product.rating.rate }}</p>
+  </div>
+
+</div>

@@ -1,0 +1,33 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: blanchedalmond solid 2px;
+  border-radius: 10px;
+  width: 800px;
+  padding: 10px;
+  margin: 10px;
+  .product_image {
+    width: 10%;
+  }
+  & button {
+    padding: 10px;
+    background: blanchedalmond;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+
+  }
+  .product_details {
+    display: block;
+    & p {
+      margin: 5px 20px;
+    }
+  }
+  .button-hide {
+    background: coral;
+  }
+}
+

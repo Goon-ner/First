@@ -1,0 +1,20 @@
+<div class="product-page">
+    <input
+            type="text"
+            placeholder="Search product..."
+            [(ngModel)]="term"
+    >
+
+    <h2 *ngIf="loading">Loading...</h2>
+
+    <div *ngIf="productService.products">
+        <app-product
+                *ngFor="let product of productService.products | filterProducts: term; let i = index"
+                [product]="product"
+        ></app-product>
+    </div>
+
+    <app-modal *ngIf="modalService.isVisible$ | async" title="Create product">
+        <app-create-product></app-create-product>
+    </app-modal>
+</div>

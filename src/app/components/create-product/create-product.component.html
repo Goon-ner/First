@@ -1,0 +1,16 @@
+<form
+        class="modal_form"
+        [formGroup]="form" (ngSubmit)="submit()">
+  <div >
+    <p *ngIf="title.errors?.minlength && title.touched">Min length 6 letters. Now {{ title.value.length }}</p>
+    <input type="text"
+           placeholder="Create product..."
+           formControlName="title"
+           appFocus
+    >
+
+
+  </div>
+
+  <button type="submit" >Create</button>
+</form>

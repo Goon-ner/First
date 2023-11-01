@@ -1,0 +1,12 @@
+.product-page input {
+        display: flex;
+        width: 400px;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid blanchedalmond;
+        border-radius: 5px;
+    }
+
+

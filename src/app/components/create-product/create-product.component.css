@@ -1,0 +1,24 @@
+.modal_form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & input {
+        padding: 10px;
+        width: 250px;
+        border: 2px solid blanchedalmond;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    & button {
+        padding: 10px;
+        cursor: pointer;
+        width: 100px;
+        background: blanchedalmond;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    & p {
+        color: red;
+        margin: 5px;
+    }
+}
