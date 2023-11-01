@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {IProduct} from "./models/product";
 import {ProductService} from "./services/products.service";
-import {Observable, tap} from "rxjs";
 import {ModalService} from "./services/modal.service";
 
 @Component({
