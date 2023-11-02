@@ -1,0 +1,15 @@
+<div class="product-details-page">
+
+  <h2 *ngIf="loading">Loading...</h2>
+
+  <div *ngIf="productService.product as product" class="product-details">
+      <img class="product_image" [src]="product.image" [alt]="product.title">
+
+      <div class="product_details">
+        <h2>{{ product.title }}</h2>
+        <h3>Price: {{ product.price | currency: "EUR" }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Rating: {{ product.rating.rate }}</p>
+      </div>
+  </div>
+</div>

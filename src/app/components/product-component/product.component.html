@@ -1,6 +1,6 @@
 <div class="product">
-  <img class="product_image" [src]="product.image" [alt]="product.title">
-  <h2>{{ product.title }}</h2>
+  <img routerLink={{product.id}} class="product_image" [src]="product.image" [alt]="product.title">
+  <h2 class="product_title" routerLink={{product.id}}>{{ product.title }} </h2>
   <h3>Price: {{ product.price | currency: "EUR" }}</h3>
   <button
     [ngClass]="{'button-hide' : details}"

@@ -1,0 +1,17 @@
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  border: blanchedalmond solid 2px;
+  border-radius: 10px;
+  width: 800px;
+  margin-top: 30px;
+  .product_image {
+    width: 20%;
+    margin: 20px;
+  }
+
+  .product_details {
+    display: block;
+    margin: 30px;
+  }
+}

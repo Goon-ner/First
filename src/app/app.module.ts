@@ -15,6 +15,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
  import {RouterOutlet} from "@angular/router";
  import {AppRoutingModule} from "./app-routing/app-routing.module";
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FocusDirective,
     ProductsPageComponent,
     AboutPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
